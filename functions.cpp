@@ -114,17 +114,13 @@ std::string trapezoid(int width, int height){
     std::cout << result;
     return result;
 }
-std::string checkerboard3x3(int width, int height)
-{
+std::string checkerboard3x3(int width, int height){
     std::string result;
 	int star = 0;
 	int space = 0;
-	for(int row = 0; row < height; row++)
-	{
-		for(int col = 0; col < width; col++)
-		{
-			if((col % 6 < 3 && row % 6 < 3) || (col % 6 >= 3 && row % 6 >= 3))
-			{
+	for(int row = 0; row < height; row++){
+		for(int col = 0; col < width; col++){
+			if((col % 6 < 3 && row % 6 < 3) || (col % 6 >= 3 && row % 6 >= 3)){
 				if(star < 3){
 					result.append("*");
 				}
